@@ -1,0 +1,163 @@
+/* SECTIONS/DIVS & GROUPS */
+body {
+  margin: 3rem 6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #6B6C6D;
+}
+
+header {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.footer-line {
+  height: 2px;
+  background-color: #B6B7BB;
+  margin-bottom: 2rem;
+}
+
+#nav-main {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2.25rem;
+  display: inline-block;
+}
+
+#nav-main a {
+  color: #A7A9AC;
+  padding: 0.5rem 1.25rem;
+}
+
+#landing {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+
+/* LINKS & ELEMENTS */
+a {
+  text-decoration: none;
+}
+
+
+/* IMAGES */
+
+#doodles {
+  display: block;
+}
+
+#projects {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#img-logo {
+  width: 4rem;
+  float: left;
+}
+
+.img-me-doodle {
+  width: 7rem;
+}
+
+#karate-iz {
+  margin-left: 1rem;
+}
+
+.img-thumbnail {
+  margin: 1rem 1rem;
+}
+
+
+/* TEXT & HEADINGS */
+.page-header {
+
+}
+
+.section-header {
+  font-weight: 600;
+  color: #A7D2C9;
+  letter-spacing: 0.1rem;
+}
+
+.sub-header {
+
+}
+
+.body-copy {
+
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+}
+
+.slogan {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 41.375rem) {
+  body {
+    margin: 3rem 4rem;
+  }
+}
+
+@media (max-width: 38.9375rem) {
+  body {
+    margin: 3rem 4rem;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  #img-logo {
+    float: none;
+  }
+
+  #nav-main {
+    display: block;
+  }
+
+  .section-header {
+    display: block;
+  }
+
+  .img-me-doodle {
+    width: 6rem;
+  }
+
+  #landing {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 37.25rem) {
+  body {
+    margin: 3rem 2rem;
+  }
+}
+
+@media (max-width: 33rem) {
+  body {
+    margin: 3rem 2rem;
+  }
+
+  #landing {
+    margin-top: 6rem;
+  }
+
+  .img-me-doodle {
+    width: 5rem;
+  }
+}
