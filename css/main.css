@@ -15,6 +15,14 @@ footer {
   margin-top: 2rem;
 }
 
+section {
+  margin-top: 3rem;
+}
+
+.sub-section {
+  margin-left: 2rem;
+}
+
 .footer-line {
   height: 2px;
   background-color: #B6B7BB;
@@ -33,6 +41,14 @@ footer {
 #nav-main a {
   color: #A7A9AC;
   padding: 0.5rem 1.25rem;
+}
+
+.nav-button {
+  font-weight: 600;
+  color: #A7A9AC;
+  padding: 0.5rem 1.25rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.1rem;
 }
 
 #landing {
@@ -63,10 +79,14 @@ footer {
   width: 50%;
   max-width: 35rem;
   margin-left: 2.25rem;
+  margin-bottom: 5rem;
+  margin-right: 1rem;
 }
 
 .img {
   display: inline-block;
+  margin-right: 3rem;
+  float: right;
 }
 
 /* .project-tag {
@@ -150,6 +170,10 @@ footer {
   margin-bottom: 8rem;
 }
 
+.contact-copy {
+  margin-top: 2rem;
+}
+
 
 
 
@@ -172,6 +196,13 @@ a:hover, a:active, a:focus {
 .project:active, .project:hover, .project:focus {
   opacity: 0.9;
 }
+
+.in-text-link {
+  color: #A7D2C9;
+}
+
+
+
 
 
 /* IMAGES */
@@ -205,12 +236,15 @@ a:hover, a:active, a:focus {
 
 .img-proj-feature {
   width: 100%;
+}
+
+.proj-1 {
   margin-top: -15%;
 }
 
 .overlay {
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.15;
 }
 
 .img-proj-details {
@@ -275,6 +309,14 @@ a:hover, a:active, a:focus {
   /* margin-bottom: 8rem; */
 }
 
+.contact-h3 {
+  margin-top: -1.25rem;
+}
+
+.contact-copy p {
+  display: inline;
+}
+
 
 
 /* MEDIA QUERIES */
@@ -287,12 +329,6 @@ a:hover, a:active, a:focus {
 
   .align-right p {
     margin-bottom: 0;
-  }
-
-  .align-right img {
-    /* position: relative;
-    float: none;
-    margin-top: 3rem; */
   }
 }
 
@@ -325,6 +361,10 @@ a:hover, a:active, a:focus {
 @media (max-width: 66rem) {
   #doodles {
     margin-right: 1%;
+  }
+
+  .bio {
+    width: 40%;
   }
 }
 
@@ -360,16 +400,25 @@ a:hover, a:active, a:focus {
   .img-me-doodle {
     width: 6rem;
   }
-}
 
-@media (max-width: 57rem) {
-  #img-hey-there {
-    margin-top: 1rem;
+  .img {
+    float: none;
+    display: block;
+    height: 20rem;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+  }
+
+  #img-about {
+    width: 100%;
+    margin-top: -25%;
   }
 
   .bio {
-    width: 45%;
+    width: 100%;
   }
+
 }
 
 @media (max-width: 56.625rem) {
@@ -408,17 +457,6 @@ a:hover, a:active, a:focus {
 }
 
 @media (max-width: 52.9375rem) {
-  #img-hey-there {
-    position: relative;
-    display: block;
-    margin-left: 0;
-  }
-
-  .bio {
-    width: 67%;
-    margin-top: -2.25rem;
-    margin-left: 6rem;
-  }
 
   .feature-img {
     height: 15rem;
@@ -436,6 +474,16 @@ a:hover, a:active, a:focus {
   .proj-title {
     margin-right: 8rem;
   }
+
+  .bio {
+    width: 75%;
+  }
+}
+
+@media (max-width: 50rem) {
+  /* #img-about {
+    margin-top: -30%;
+  } */
 }
 
 @media (max-width: 45.875rem) {
@@ -544,11 +592,22 @@ a:hover, a:active, a:focus {
     margin-bottom: 6.35rem;
     margin-left: 6%;
   }
+
+  .bio {
+    margin-top: 0;
+  }
 }
+
 
 @media (max-width: 30.5rem) {
   .proj-title {
     margin-top: 6rem;
+  }
+
+  .bio {
+    margin-top: -2rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -557,20 +616,12 @@ a:hover, a:active, a:focus {
     margin-bottom: 8.35rem;
     margin-left: -0.15rem;
   }
+
+  .bio {
+    margin-top: -5rem;
+  }
 }
 
 @media (max-width: 24.0625rem) {
-  .bio {
-    width: 100%;
-    margin-top: -2.25rem;
-    margin-left: 0rem;
-  }
 
-  #img-hey-there {
-    z-index: -1;
-  }
-
-  .img-about {
-    width: 100%;
-  }
 }
