@@ -510,13 +510,176 @@ a:hover, a:active, a:focus {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 75.4375rem) {
+  .proj-details p {
+    min-width: 20rem;
+    padding: 0 1.5rem;
+  }
+
+  .align-right p {
+    margin-bottom: 0;
+  }
+
+  #home-blurb {
+    width: 55%;
+    margin-left: 22.5%;
+  }
+}
+
+@media (max-width: 56.625rem) {
+  .proj-details p {
+    max-width: 100%;
+  }
+
+  #home-blurb {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 52.9375rem) {
+
+  .feature-img {
+    height: 15rem;
+  }
+
+  .proj-blurb {
+    margin-top: 1rem;
+  }
+
+  .proj-details {
+    margin-top: 15rem;
+    margin-left: 3rem;
+  }
+
+  .proj-title {
+    margin-right: 8rem;
+  }
+
+  #home-blurb {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 45.875rem) {
+  .img-proj-details {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 41.375rem) {
+  .proj-blurb {
+    margin-left: 0;
+  }
+
+  .proj-details {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 40.625rem) {
   nav#nav-main {
-  display: none;
+    display: none;
+  }
 
+  nav#nav-ham {
+    display: block;
+  }
+
+  #home-blurb {
+    font-size: 0.9rem;
+    line-height: 1.75rem;
+  }
 }
 
-nav#nav-ham {
-  display: block;
+@media (max-width: 38.9375rem) {
+
+  .section-header {
+    display: block;
+  }
+
+  #projects {
+    margin-top: 2rem;
+  }
+
+  .proj-blurb p {
+    margin-right: 3rem;
+  }
+
+  .proj-details p {
+    width: 100%;
+  }
+
+  #home-blurb {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  #menu a {
+    margin-left: 3rem;
+  }
 }
+
+@media (max-width: 36rem) {
+  #menu a {
+    margin-left: 4rem;
+  }
+}
+
+/* @media (max-width: 35rem) {
+  #menu a {
+    margin-left: 5rem;
+  }
+} */
+
+@media (max-width: 34.9375rem) {
+  body {
+    margin: 3rem 4rem;
+  }
+
+  #menu a {
+    margin-left: 4.5rem;
+  }
+}
+
+@media (max-width: 32rem) {
+  #menu a {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 30.5rem) {
+  body {
+    margin: 3rem 3rem;
+  }
+
+  .img-me-doodle {
+    width: 5.5rem;
+  }
+
+  #menu a {
+    margin-left: 7rem;
+  }
+}
+
+@media (max-width: 26rem) {
+  #menu a {
+    margin-left: 10rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  body {
+    margin: 3rem 2.5rem;
+  }
+
+  .img-me-doodle {
+    width: 4.5rem;
+  }
+
+  #menu a {
+    margin-left: 15rem;
+  }
 }
