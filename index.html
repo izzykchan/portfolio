@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-2.css">
     <!-- <link rel="stylesheet" href="css/flexbox.css"> -->
 
   </head>
@@ -22,9 +22,23 @@
       <a href="index.html"><img id="img-logo" src="img/logo.svg" alt="the initials i-k-c"></img></a>
 
       <nav id="nav-main">
-        <a href="#projects" class="active">work</a>
-        <a href="about.html">about</a>
-        <!-- <a href="contact.html">contact</a> -->
+        <a href="#projects" class="nav-button active">work</a>
+        <a href="about.html" class="nav-button">about</a>
+      </nav>
+
+      <nav id="nav-ham">
+        <div id="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <div id="menu" aria-hidden="true">
+              <a href="index.html" class="button-nav">work</a>
+              <a href="about.html" class="button-nav">about</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -36,23 +50,28 @@
         <img class="img-me-doodle" id="karate-iz" src="img/karate-iz.svg" alt="a doodle of a girl doing a karate kick"></img>
       </div>
 
-      <div class="thick-dash"></div>
-
       <div id="home-blurb">
-        <h2 class="section-header">izzy is a print & user experience design student, optimist, and karateka.</h2>
+        <h2 class="proj-sub-header">izzy is a print & ux design student, optimist, and karateka.</h2>
       </div>
+
+      <a href="#projects"><div class="arrow-down"></div></a>
 
     </section>
 
     <section id="projects">
       <a href="project-1.html">
-        <div class="project feature-img">
+        <h1 class="section-header">projects</h1>
+        <div class="project">
+          <div class="overlay-mint">
+          </div>
           <img class="img-proj-feature proj-1" src="img/yrbk-flatlay.png" alt="the front and back covers of Burnaby North Secondary's 2015 Yearbook, called Create.">
         </div>
       </a>
       <a href="project-2.html">
-        <div class="project feature-img">
+        <div class="project">
+          <div class="overlay-mint"></div>
           <img class="img-proj-feature proj-2" src="img/cozmos-critters.png" alt="the front and back covers of Burnaby North Secondary's 2015 Yearbook, called Create.">
+
         </div>
       </a>
     </section>

@@ -1,0 +1,522 @@
+/* SECTIONS/DIVS & GROUPS */
+body {
+  margin: 3rem 6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #6B6C6D;
+}
+
+header {
+  /* text-align: right; */
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  /* border-bottom: 1.25px solid #DEE2E8; */
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+/* section {
+  margin-top: 3rem;
+} */
+
+.sub-section {
+  margin-left: 2rem;
+}
+
+.footer-line {
+  height: 2px;
+  background-color: #B6B7BB;
+  margin-bottom: 2rem;
+}
+
+.nav-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #A7A9AC;
+  padding: 0.5rem 1.25rem;
+}
+
+nav#nav-main {
+  /* margin-top: 2rem; */
+  padding-top: 1.75rem;
+  /* margin-left: 65% */
+  float: right;
+}
+
+/* when hamburger icon clicked, make menu visible */
+#menu-toggle input:checked ~ div#menu {
+  width: 41rem;
+  height: 100rem;
+  margin-top: -7rem;
+  margin-left: -31rem;
+
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+#menu {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  text-align: center;
+  padding-top: 15rem;
+
+  background: #A7D2C9;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  /* transition found at: https://css-tricks.com/using-css-transitions-auto-dimensions/ */
+  transition: height 0.2s ease-out;
+}
+
+/* CSS only hamburger menu found at https://codepen.io/erikterwan/pen/EVzeRP
+because the js one we learned in class required refreshing the page & we were
+hoping to do one that does not require that */
+
+nav#nav-ham {
+  display: none;
+}
+
+nav#nav-ham span {
+  margin-left: 95%;
+  background: #DEE2E8;
+}
+
+nav#nav-ham input {
+  margin-left: 90%;
+}
+
+
+#menu-toggle {
+  display: block;
+  position: relative;
+
+  float: right;
+  margin-right: 2rem;
+  margin-top: 1.75rem;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu-toggle input {
+  display: block;
+  width: 2rem;
+  height:2rem;
+  position: absolute;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/* the three lines of the menu icon/symbol-- not sure if 'span' is semantic but this is how the tutorial does it and i think we need this in order to animate properly */
+
+#menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #DEE2E8;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: rotate(45deg);
+
+  transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.22s ease;
+}
+
+
+#menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* Transform all the lines of hamburger into an x */
+/* transform the top line */
+#menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(4px, 9px);
+  background: white;
+}
+
+/* hide the middle line */
+#menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* transform bottom line */
+#menu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(1px, 4px);
+}
+
+#landing {
+  padding-top: 10rem;
+  text-align: center;
+}
+
+#home-blurb {
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  line-height: 2rem;
+  margin-top: 0rem;
+}
+
+#doodles {
+  display: block;
+}
+
+#page-content {
+  padding-top: 3rem;
+}
+
+#projects {
+  display: block;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.content {
+  margin-top: 5rem;
+}
+
+.figure {
+  display: block;
+}
+
+.bio {
+  display: block;
+  text-align: center;
+  /* width: 50%;
+  max-width: 35rem;
+  margin-left: 2.25rem;
+  margin-bottom: 5rem;
+  margin-right: 1rem; */
+}
+
+.bio-copy {
+  display: inline-block;
+  text-align: left;
+  max-width: 40rem;
+  margin-left: 2rem;
+}
+
+.single-doodle {
+  display: block;
+  /* margin-top: -3rem; */
+}
+
+.img-grid {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* .project-tag {
+  width: 4rem;
+  height: 2rem;
+  background-color: #E1E2E5;
+  position: relative;
+  top: 4rem;
+} */
+
+.project {
+  display: inline-block;
+  width: 49%;
+  height: 20rem;
+  /* background-color: #A7A9AC; */
+  max-height: 35rem;
+  overflow: hidden;
+  /* vertical-align: center; */
+}
+
+.proj-title {
+  position: absolute;
+  margin-left: 3rem;
+  margin-top: 8rem;
+  line-height: 0.5rem;
+  z-index: 2;
+}
+
+.proj-blurb {
+  position: absolute;
+  margin-left: 3rem;
+  margin-top: -15rem;
+  max-width: 30rem;
+  line-height: 1.45rem;
+}
+
+.proj-details {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.align-right {
+  float: right;
+}
+
+.align-left {
+  display: block;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.proj-details-right {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.contact-copy {
+  margin-top: 2rem;
+}
+
+
+
+
+/* LINKS & ELEMENTS */
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+a:hover, a:active, a:focus {
+  color: #DEE2E8;
+}
+
+#nav-main a.active {
+  color: #DEE2E8;
+}
+
+#menu a {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+}
+
+#menu a:hover, #menu a:active, #menu a:focus {
+  color: #DEE2E8;
+}
+
+.overlay-mint:active, .overlay-mint:hover, .overlay-mint:focus {
+  opacity: 0.8;
+}
+
+.in-text-link {
+  color: #A7D2C9;
+}
+
+/* css on how to create a "down arrow" found at https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #A7D2C9;
+
+  margin-top: 6rem;
+  display: block;
+  margin-left: 48%;
+
+  -webkit-transition: border-top-color 0.2s ease-out;
+  transition: border-top-color 0.2s ease-out;
+}
+
+.arrow-down:hover, .arrow-down:focus, .arrow-down:active {
+  border-top-color: #DEE2E8;
+}
+
+
+
+
+
+
+/* IMAGES */
+
+#img-logo {
+  width: 4rem;
+  /* display: inline-block; */
+  float: left;
+}
+
+.img-me-doodle {
+  width: 7rem;
+}
+
+#karate-iz {
+  margin-left: -0.5rem;
+}
+
+#waving-iz {
+  margin-right: -1rem;
+}
+
+#waving-iz-about {
+  width: 10rem;
+  /* margin-left: -2rem; */
+  /* margin-top: -5rem; */
+  /* position: absolute; */
+}
+
+.img-thumbnail {
+  width: 100%;
+}
+
+#img-about {
+  width: 20rem;
+}
+
+.img-proj-feature {
+  width: 100%;
+}
+
+.proj-1 {
+  margin-top: -80%;
+}
+
+.proj-2 {
+  margin-top: -100%;
+  width: 125%;
+}
+
+.overlay {
+  background-color: white;
+  opacity: 0.15;
+}
+
+.overlay-mint {
+  /* position: absolute; */
+  background-color: #A7D2C9;
+  opacity: 0;
+  height: 100%;
+  margin: 0;
+
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.img-proj-details {
+  margin-top: 3rem;
+  max-width: 30rem;
+  display: inline-block;
+}
+
+.align-right img {
+  display: block;
+  margin-top: 1rem;
+}
+
+
+
+/* TEXT & HEADINGS */
+
+.section-header {
+  font-weight: 300;
+  color: #A7D2C9;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.proj-sub-header {
+  font-weight: 300;
+  color: #A7A9AC;
+  letter-spacing: 0.05rem;
+  display: inline;
+  text-transform: lowercase;
+}
+
+.proj-header {
+  color: #A7D2C9;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.sub-header {
+  font-weight: 400;
+  color: #A7A9AC;
+  letter-spacing: 0.05rem;
+  text-transform: lowercase;
+}
+
+.body-copy {
+  font-weight: 300;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+}
+
+.emphasis {
+  color: #A7D2C9;
+}
+
+.proj-details p {
+  display: inline-block;
+  max-width: 40%;
+  padding: 0rem 3rem;
+  line-height: 1.45rem;
+}
+
+.proj-title h3 {
+  line-height: 1.5rem;
+}
+
+.align-right p {
+  /* margin-bottom: 8rem; */
+}
+
+.contact-h3 {
+  margin-top: -1.25rem;
+}
+
+.contact-copy p {
+  display: inline;
+}
+
+.bio .section-header {
+  margin: 0;
+  text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 40.625rem) {
+  nav#nav-main {
+  display: none;
+
+}
+
+nav#nav-ham {
+  display: block;
+}
+}
