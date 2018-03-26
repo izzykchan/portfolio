@@ -195,7 +195,7 @@ nav#nav-ham input {
 #projects {
   display: block;
   text-align: center;
-  margin-top: 15rem;
+  margin-top: 12rem;
 }
 
 .content {
@@ -234,20 +234,14 @@ nav#nav-ham input {
   margin-top: 3rem;
 }
 
-/* .project-tag {
-  width: 4rem;
-  height: 2rem;
-  background-color: #E1E2E5;
-  position: relative;
-  top: 4rem;
-} */
-
 .project {
   display: inline-block;
-  width: 49%;
+  width: 47.5%;
   height: 20rem;
+  /* height: 30%; */
+  margin: 0.5rem 0.5rem;
   /* background-color: #A7A9AC; */
-  max-height: 35rem;
+  /* max-height: 35rem; */
   overflow: hidden;
   /* vertical-align: center; */
 }
@@ -393,16 +387,18 @@ a:hover, a:active, a:focus {
 }
 
 .img-proj-feature {
-  width: 100%;
+  width: 150%;
 }
 
 .proj-1 {
-  margin-top: -80%;
+  margin-top: -115%;
+  margin-left: -25%;
 }
 
 .proj-2 {
   margin-top: -100%;
-  width: 125%;
+  margin-left: -35%;
+  width: 175%;
 }
 
 .overlay {
@@ -524,6 +520,28 @@ a:hover, a:active, a:focus {
     width: 55%;
     margin-left: 22.5%;
   }
+
+  .arrow-down {
+    margin-left: 47%;
+  }
+}
+
+@media (max-width: 70rem) {
+  .arrow-down {
+    margin-left: 46%;
+  }
+}
+
+@media (max-width: 65rem) {
+  .arrow-down {
+    margin-left: 45%;
+  }
+}
+
+@media (max-width: 57.5rem) {
+  .project {
+    width: 100%;
+  }
 }
 
 @media (max-width: 56.625rem) {
@@ -620,6 +638,10 @@ a:hover, a:active, a:focus {
   #menu a {
     margin-left: 3rem;
   }
+
+  #projects {
+    margin-top: 15rem;
+  }
 }
 
 @media (max-width: 36rem) {
@@ -661,6 +683,10 @@ a:hover, a:active, a:focus {
 
   #menu a {
     margin-left: 7rem;
+  }
+
+  .project {
+    height: 18.5rem;
   }
 }
 
