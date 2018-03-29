@@ -216,13 +216,6 @@ nav#nav-ham input {
   margin-right: 1rem; */
 }
 
-.bio-copy {
-  display: inline-block;
-  text-align: left;
-  max-width: 40rem;
-  margin-left: 2rem;
-}
-
 .single-doodle {
   display: block;
   /* margin-top: -3rem; */
@@ -246,12 +239,9 @@ nav#nav-ham input {
   /* vertical-align: center; */
 }
 
-.proj-title {
-  position: absolute;
-  margin-left: 3rem;
-  margin-top: 8rem;
-  line-height: 0.5rem;
-  z-index: 2;
+.proj-page {
+  display: block;
+  text-align: center;
 }
 
 .proj-blurb {
@@ -267,23 +257,10 @@ nav#nav-ham input {
   margin-left: 3rem;
 }
 
-.align-right {
-  float: right;
-}
-
-.align-left {
-  display: block;
-  margin-top: 3rem;
-  width: 100%;
-}
-
-.proj-details-right {
-  margin-top: 3rem;
-  margin-bottom: 8rem;
-}
-
-.contact-copy {
-  margin-top: 2rem;
+.proj-listing {
+  max-width: 45rem;
+  margin: auto;
+  margin-bottom: 6rem;
 }
 
 
@@ -387,18 +364,31 @@ a:hover, a:active, a:focus {
 }
 
 .img-proj-feature {
-  width: 150%;
+  width: 100%;
+  margin-top: -5rem;
+}
+
+.img-proj-preview {
+  width: 100%;
+  margin-top: -5rem;
+}
+
+.img-proj {
+  height: 40rem;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 2rem;
 }
 
 .proj-1 {
   margin-top: -115%;
-  margin-left: -25%;
+  /* margin-left: -10%; */
 }
 
 .proj-2 {
   margin-top: -100%;
-  margin-left: -35%;
-  width: 175%;
+  margin-left: -12%;
+  width: 125%;
 }
 
 .overlay {
@@ -418,14 +408,13 @@ a:hover, a:active, a:focus {
 }
 
 .img-proj-details {
-  margin-top: 3rem;
-  max-width: 30rem;
+  /* margin-top: 3rem; */
+  max-width: 45rem;
   display: inline-block;
 }
 
-.align-right img {
-  display: block;
-  margin-top: 1rem;
+.brochure-cover {
+  width: 105%;
 }
 
 
@@ -437,22 +426,19 @@ a:hover, a:active, a:focus {
   color: #A7D2C9;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  text-align: left;
-  margin-left: 3rem;
+  /* text-align: left; */
+  /* margin-left: 3rem; */
 }
 
 .proj-sub-header {
   font-weight: 300;
   color: #A7A9AC;
+  font-size: 1rem;
   letter-spacing: 0.05rem;
-  display: inline;
-  text-transform: lowercase;
-}
-
-.proj-header {
-  color: #A7D2C9;
-  letter-spacing: 0.1rem;
+  display: block;
   text-transform: uppercase;
+  margin-top: 8rem;
+  margin-bottom: auto;
 }
 
 .sub-header {
@@ -462,15 +448,55 @@ a:hover, a:active, a:focus {
   text-transform: lowercase;
 }
 
+.home-blurb-header {
+  font-weight: 300;
+  color: #A7A9AC;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 0rem;
+  margin-bottom: auto;
+}
+
 .body-copy {
   font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.proj-copy {
+  display: inline-block;
+  text-align: left;
+  max-width: 45rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  line-height: 1.75rem;
+}
+
+.bio-copy {
+  display: inline-block;
+  text-align: left;
+  max-width: 40rem;
+  margin-left: 2rem;
+}
+
+.contact-copy {
+  margin-top: 2rem;
 }
 
 .footer-copy {
   font-size: 0.75rem;
 }
 
-.emphasis {
+.title {
+  font-weight: 400;
+  color: #444;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+  /* text-transform: uppercase; */
+}
+
+.mint {
   color: #A7D2C9;
 }
 
@@ -485,10 +511,6 @@ a:hover, a:active, a:focus {
   line-height: 1.5rem;
 }
 
-.align-right p {
-  /* margin-bottom: 8rem; */
-}
-
 .contact-h3 {
   margin-top: -1.25rem;
 }
@@ -501,6 +523,24 @@ a:hover, a:active, a:focus {
   margin: 0;
   text-align: center;
 }
+
+.sub-script {
+  font-weight: 400i;
+  color: #A7A9AC;
+  margin-top: -0.5rem;
+  line-height: 1.5rem;
+}
+
+.list-proj-info {
+  max-width: 40rem;
+  margin: 3rem 0;
+}
+
+.list-proj-info li {
+  margin-left: 3rem;
+}
+
+
 
 
 
@@ -530,6 +570,15 @@ a:hover, a:active, a:focus {
   .arrow-down {
     margin-left: 46%;
   }
+
+  .img-proj {
+    height: auto;
+  }
+
+  .proj-sub-header {
+    margin-top: 4rem;
+  }
+
 }
 
 @media (max-width: 65rem) {
@@ -570,20 +619,25 @@ a:hover, a:active, a:focus {
     margin-left: 3rem;
   }
 
-  .proj-title {
-    margin-right: 8rem;
-  }
-
   #home-blurb {
     width: 80%;
     margin-left: 10%;
   }
-}
 
-@media (max-width: 45.875rem) {
+  .img-proj-feature {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .proj-sub-header {
+    margin-top: 3rem;
+  }
+
   .img-proj-details {
     width: 100%;
-    height: 100%;
+    height: auto;
+    margin-top: 0;
   }
 }
 
@@ -663,6 +717,14 @@ a:hover, a:active, a:focus {
 
   #menu a {
     margin-left: 4.5rem;
+  }
+
+  .proj-sub-header {
+    /* margin-top: 2rem; */
+  }
+
+  .proj-copy {
+    margin-top: 1rem;
   }
 }
 
