@@ -1,6 +1,5 @@
-/* SECTIONS/DIVS & GROUPS */
 body {
-  margin: 3rem 6rem;
+  margin: 3rem 2.5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: #6B6C6D;
@@ -34,9 +33,8 @@ footer {
 }
 
 nav#nav-main {
-  /* margin-top: 2rem; */
+  display: none;
   padding-top: 1.75rem;
-  /* margin-left: 65% */
   float: right;
 }
 
@@ -45,7 +43,7 @@ nav#nav-main {
   width: 41rem;
   height: 100rem;
   margin-top: -7rem;
-  margin-left: -31rem;
+  margin-left: -32rem;
 
   opacity: 1;
   display: block;
@@ -73,11 +71,12 @@ because the js one we learned in class required refreshing the page & we were
 hoping to do one that does not require that */
 
 nav#nav-ham {
-  display: none;
+  display: block;
 }
 
 nav#nav-ham span {
   margin-left: 95%;
+  /* float: right; */
   background: #DEE2E8;
 }
 
@@ -163,93 +162,6 @@ nav#nav-ham input {
   transform: rotate(-45deg) translate(1px, 4px);
 }
 
-/* RENDERED HAMBURGER NAV */
-/* when hamburger icon clicked, make menu visible */
-#menu-toggle-rendered input:checked ~ div.rendered-nav-ham {
-  background-color: #A7D2C9;
-
-  opacity: 1;
-  display: block;
-  visibility: visible;
-}
-
-#menu-toggle-rendered {
-  display: block;
-  /* position: relative; */
-
-  float: right;
-  /* margin-right: 0rem; */
-  margin-top: 3rem;
-
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menu-toggle-rendered input {
-  display: block;
-  width: 2rem;
-  height:2rem;
-  position: absolute;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/* the three lines of the menu icon/symbol-- not sure if 'span' is semantic but this is how the tutorial does it and i think we need this in order to animate properly */
-
-#menu-toggle-rendered span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #DEE2E8;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: rotate(45deg);
-
-  transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.22s ease;
-}
-
-
-#menu-toggle-rendered span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menu-toggle-rendered span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-/* Transform all the lines of hamburger into an x */
-/* transform the top line */
-#menu-toggle-rendered input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(4px, 9px);
-  background: white;
-}
-
-/* hide the middle line */
-#menu-toggle-rendered input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/* transform bottom line */
-#menu-toggle-rendered input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(1px, 4px);
-}
-
 
 #landing {
   padding-top: 10rem;
@@ -258,9 +170,10 @@ nav#nav-ham input {
 
 #home-blurb {
   display: block;
-  width: 50%;
-  margin-left: 25%;
-  line-height: 2rem;
+  /* width: 50%; */
+  /* margin-left: 25%; */
+  /* line-height: 2rem; */
+  line-height: 1.75rem;
   margin-top: 0rem;
 }
 
@@ -275,8 +188,8 @@ nav#nav-ham input {
 #projects {
   display: block;
   text-align: center;
-  margin-top: 12rem;
-  padding-top: 4rem;
+  margin-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
@@ -295,32 +208,27 @@ nav#nav-ham input {
 .bio {
   display: block;
   text-align: center;
-  /* width: 50%;
-  max-width: 35rem;
-  margin-left: 2.25rem;
-  margin-bottom: 5rem;
-  margin-right: 1rem; */
 }
 
 .single-doodle {
   display: block;
-  /* margin-top: -3rem; */
 }
 
 .img-grid {
   display: block;
   text-align: center;
   margin-top: 3rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .project {
   display: block;
   max-width: 40rem;
-  height: 20rem;
+  height: 12rem;
   margin: auto;
   margin-bottom: 0.5rem;
   overflow: hidden;
-  /* box-shadow: 5px 5px 5px #DEE2E8; */
 }
 
 .proj-page {
@@ -342,9 +250,10 @@ nav#nav-ham input {
 }
 
 .proj-listing {
-  max-width: 45rem;
+  max-width: 40rem;
   margin: auto;
   margin-bottom: 6rem;
+  text-align: left;
 }
 
 #landing-styleguide {
@@ -415,7 +324,8 @@ a.in-text-link:visited {
 }
 
 a:hover, a:active, a:focus {
-  color: #DEE2E8;
+  color: #2A506C;
+  opacity: 0.75;
 }
 
 #nav-main a.active {
@@ -429,10 +339,12 @@ a:hover, a:active, a:focus {
   font-weight: 400;
   text-transform: uppercase;
   padding-top: 1.5rem;
+  margin-left: 11rem;
 }
 
 #menu a:hover, #menu a:active, #menu a:focus {
-  color: #DEE2E8;
+  color: #2A506C;
+  opacity: 0.75;
 }
 
 .overlay-mint:active, .overlay-mint:hover, .overlay-mint:focus {
@@ -447,7 +359,8 @@ a:hover, a:active, a:focus {
 }
 
 a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
-  color: #DEE2E8;
+  color: #2A506C;
+  opacity: 0.75;
 }
 
 /* css on how to create a "down arrow" found at https://css-tricks.com/snippets/css/css-triangle/ */
@@ -461,14 +374,16 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 
   margin-top: 6rem;
   display: block;
-  margin-left: 48%;
+  margin-left: auto;
+  margin-right: auto;
 
   -webkit-transition: border-top-color 0.2s ease-out;
   transition: border-top-color 0.2s ease-out;
 }
 
 .arrow-down:hover, .arrow-down:focus, .arrow-down:active {
-  border-top-color: #DEE2E8;
+  border-top-color: #2A506C;
+  opacity: 0.75;
 }
 
 
@@ -485,7 +400,8 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 }
 
 .img-me-doodle {
-  width: 7rem;
+  width: 4.5rem;
+  /* 4.5rem */
 }
 
 #karate-iz {
@@ -497,7 +413,8 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 }
 
 #waving-iz-about {
-  width: 10rem;
+  width: 8rem;
+  padding-top: 2rem;
 }
 
 .img-thumbnail {
@@ -509,12 +426,8 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 }
 
 #img-about-2 {
-  width: 30rem;
-}
-
-.img-proj-feature {
   width: 100%;
-  margin-top: -5rem;
+  max-width: 40rem;
 }
 
 .img-proj-preview {
@@ -523,26 +436,25 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 }
 
 .img-proj {
-  height: 40rem;
-  overflow: hidden;
-  max-width: 100%;
-  margin-top: 2rem;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .proj-1 {
   margin-top: -115%;
+  width: 115%;
   /* margin-left: -10%; */
 }
 
 .proj-2 {
-  margin-top: -100%;
+  margin-top: -110%;
   margin-left: -12%;
   width: 125%;
 }
 
 .overlay-mint {
-  background-color: #6B6C6D;
-  opacity: 0.5;
+  background-color: #333;
+  opacity: 0.65;
   height: 100%;
   margin: 0;
   vertical-align: center;
@@ -555,13 +467,8 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   color: white;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 9.5rem;
-}
-
-.img-proj-details {
-  /* margin-top: 3rem; */
-  max-width: 45rem;
-  display: inline-block;
+  padding-top: 5.75rem;
+  opacity: 1;
 }
 
 .brochure-cover {
@@ -578,8 +485,6 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   font-size: 2rem;
-  /* text-align: left; */
-  /* margin-left: 3rem; */
 }
 
 .proj-sub-header {
@@ -594,8 +499,10 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 }
 
 .sub-header {
-  font-weight: 400;
-  color: #A7A9AC;
+  font-weight: 500;
+  color: #4D616C;
+  opacity: 0.65;
+  margin-top: -0.75rem;
   letter-spacing: 0.05rem;
   text-transform: lowercase;
 }
@@ -618,13 +525,15 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 .body-copy {
   font-weight: 300;
   margin-bottom: 2rem;
+  margin-left: 0;
+  max-width: 40rem;
 }
 
 .proj-copy {
   display: inline-block;
   text-align: left;
   max-width: 45rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
   margin-top: 2rem;
   line-height: 1.75rem;
 }
@@ -633,7 +542,7 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   display: inline-block;
   text-align: left;
   max-width: 40rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   line-height: 1.5rem;
 }
 
@@ -649,19 +558,16 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   font-weight: 400;
   color: #444;
   margin-top: 2rem;
-  margin-bottom: -0.5rem;
-  /* text-transform: uppercase; */
+  margin-bottom: 0rem;
 }
 
 .mint {
   color: #A7D2C9;
 }
 
-.proj-details p {
-  display: inline-block;
-  max-width: 40%;
-  padding: 0rem 3rem;
-  line-height: 1.45rem;
+.red {
+  color: #E7633E;
+  opacity: 0.65;
 }
 
 .proj-title h3 {
@@ -685,8 +591,13 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 .sub-script {
   font-weight: 400i;
   color: #A7A9AC;
-  margin-top: -0.5rem;
-  line-height: 1.5rem;
+  margin-top: -1.5rem;
+}
+
+.sub-script-emphasis {
+  color: #E7633E;
+  opacity: 0.65;
+  margin-top: -1.5rem;
 }
 
 .list-proj-info {
@@ -695,7 +606,7 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 }
 
 .list-proj-info li {
-  margin-left: 3rem;
+  margin-left: 1.5rem;
 }
 
 .styleguide-section {
@@ -734,11 +645,25 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   margin-left: 43%;
 }
 
+figcaption {
+  margin-top: 0.5rem;
+}
+
 
 
 /* MEDIA QUERIES */
 
-@media (max-width: 75.4375rem) {
+@media (min-width: 75.4376rem) {
+  body {
+    margin: 3rem 6rem;
+  }
+
+  #menu a {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 70.1rem) {
   .proj-details p {
     min-width: 20rem;
     padding: 0 1.5rem;
@@ -752,17 +677,9 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
     width: 55%;
     margin-left: 22.5%;
   }
-
-  .arrow-down {
-    margin-left: 47%;
-  }
 }
 
-@media (max-width: 70rem) {
-  .arrow-down {
-    margin-left: 46%;
-  }
-
+@media (min-width: 65.1rem) {
   .img-proj {
     height: auto;
   }
@@ -773,30 +690,19 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 
 }
 
-@media (max-width: 65rem) {
-  .arrow-down {
-    margin-left: 45%;
-  }
-}
-
-@media (max-width: 57.5rem) {
+@media (min-width: 56.626rem) {
   .project {
     width: 100%;
   }
 }
 
-@media (max-width: 56.625rem) {
+@media (min-width: 52.9376rem) {
   .proj-details p {
     max-width: 100%;
   }
-
-  #home-blurb {
-    width: 60%;
-    margin-left: 20%;
-  }
 }
 
-@media (max-width: 52.9375rem) {
+@media (min-width: 41.376rem) {
 
   .feature-img {
     height: 15rem;
@@ -809,11 +715,6 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   .proj-details {
     margin-top: 15rem;
     margin-left: 3rem;
-  }
-
-  #home-blurb {
-    width: 80%;
-    margin-left: 10%;
   }
 
   .img-proj-feature {
@@ -831,9 +732,14 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
     height: auto;
     margin-top: 0;
   }
+
+  #home-blurb {
+    width: 60%;
+    margin-left: 20%;
+  }
 }
 
-@media (max-width: 41.375rem) {
+@media (min-width: 40.626rem) {
   .proj-blurb {
     margin-left: 0;
   }
@@ -841,24 +747,25 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   .proj-details {
     margin-left: 0;
   }
+
 }
 
-@media (max-width: 40.625rem) {
+@media (min-width: 38.9376rem) {
   nav#nav-main {
-    display: none;
-  }
-
-  nav#nav-ham {
     display: block;
   }
 
+  nav#nav-ham {
+    display: none;
+  }
+
   #home-blurb {
-    font-size: 0.9rem;
-    line-height: 1.75rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
 
-@media (max-width: 38.9375rem) {
+@media (min-width: 36.1rem) {
 
   .section-header {
     display: block;
@@ -868,21 +775,13 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
     margin-top: 2rem;
   }
 
-  .proj-blurb p {
-    margin-right: 3rem;
-  }
 
   .proj-details p {
     width: 100%;
   }
 
-  #home-blurb {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-  }
-
-  #menu a {
-    margin-left: 3rem;
+  .proj-1, .proj-2 {
+    margin-top: -100%;
   }
 
   #projects {
@@ -890,76 +789,55 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
   }
 }
 
-@media (max-width: 36rem) {
-  #menu a {
-    margin-left: 4rem;
+@media (min-width: 34.9376rem) {
+  #home-blurb {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
-/* @media (max-width: 35rem) {
-  #menu a {
-    margin-left: 5rem;
-  }
-} */
-
-@media (max-width: 34.9375rem) {
+@media (min-width: 32.1rem) {
   body {
     margin: 3rem 4rem;
   }
 
-  #menu a {
-    margin-left: 4.5rem;
-  }
-
-  .proj-sub-header {
-    /* margin-top: 2rem; */
+  .list-proj-info li {
+    margin-left: 3rem;
   }
 
   .proj-copy {
     margin-top: 1rem;
   }
-}
 
-@media (max-width: 32rem) {
-  #menu a {
-    margin-left: 5rem;
+  .project {
+    height: 20rem;
+  }
+
+  #projects .sub-header {
+    padding-top: 10rem;
   }
 }
 
-@media (max-width: 30.5rem) {
+@media (min-width: 30.6rem) {
+  #menu a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 26.0625rem) {
   body {
     margin: 3rem 3rem;
   }
 
   .img-me-doodle {
-    width: 5.5rem;
-  }
-
-  #menu a {
-    margin-left: 7rem;
-  }
-
-  .project {
-    height: 18.5rem;
+    width: 6rem;
   }
 }
 
-@media (max-width: 26rem) {
-  #menu a {
-    margin-left: 10rem;
-  }
-}
-
-@media (max-width: 22rem) {
-  body {
-    margin: 3rem 2.5rem;
+@media (min-width: 22.1rem) {
+  #projects {
+    padding-top: 4rem;
   }
 
-  .img-me-doodle {
-    width: 4.5rem;
-  }
-
-  #menu a {
-    margin-left: 15rem;
-  }
 }

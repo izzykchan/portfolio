@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main-2.css">
+    <link rel="stylesheet" href="css/main-4.css">
     <!-- <link rel="stylesheet" href="css/flexbox.css"> -->
 
   </head>
@@ -22,7 +22,7 @@
       <a href="index.html"><img id="img-logo" src="img/logo.svg" alt="the initials i-k-c"></img></a>
 
       <nav id="nav-main">
-        <a href="index.html" class="nav-button">work</a>
+        <a href="index.html#projects" class="nav-button">work</a>
         <a href="about.html" class="nav-button active">about</a>
       </nav>
 
@@ -34,7 +34,7 @@
             <span></span>
 
             <div id="menu" aria-hidden="true">
-              <a href="index.html" class="button-nav">work</a>
+              <a href="index.html#projects" class="button-nav">work</a>
               <a href="about.html" class="button-nav">about</a>
             </div>
           </div>
@@ -56,17 +56,20 @@
 
             <div class="contact-copy">
               <p class="body-copy">If you want to say hello, feel free to email me at </p>
-              <p class="body-copy mint">izzyc@sfu.ca</p>
+              <!-- mailto code from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto , found through Elgin! :) -->
+              <a href="mailto:izzyc@sfu.ca?Subject=Hey%20there!" target="_top" class="in-text-link">
+                <p class="body-copy">izzyc@sfu.ca</p>
+              </a>
               <p class="body-copy"> or connect with me on <a class="in-text-link" href="https://www.facebook.com/izzy.k.chan">Facebook</a> or <a class="in-text-link" href="https://www.instagram.com/izzykchaan/">Instagram</a> and see what I've been up to!</p>
             </div>
           </div>
         </div>
 
-        <div class="img-grid">
-          <img id="img-about" src="img/img-about.jpg" alt="a girl sitting with a cup of coffee, laughing"></img>
-          <img id="img-about-2" src="img/img-about-2.jpg" alt="a girl sitting with a cup of coffee, laughing"></img>
+        <figure class="img-grid">
           <!-- <img id="img-about" src="img/img-about.jpg" alt="a girl sitting with a cup of coffee, laughing"></img> -->
-        </div>
+          <img id="img-about-2" src="img/img-about-2.jpg" alt="a girl sitting with a cup of coffee, laughing"></img>
+          <figcaption>Photo by the amazing <a href="https://www.annettecheung.com/changethegame/" class="in-text-link">Annette Cheung.</a></figcaption>
+        </figure>
     </section>
 
 
@@ -74,6 +77,7 @@
       <div class="footer-line"></div>
       <p class="footer-copy">This site was designed and coded by Izzy Chan.</p>
       <p class="footer-copy">March 2018.</p>
+      <a href="styleguide.html"><p class="footer-copy in-text-link">Styleguide</p></a>
     </footer>
 
   </body>

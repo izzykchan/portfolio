@@ -1,0 +1,236 @@
+body {
+  margin: 3rem 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #6B6C6D;
+  text-align: center;
+}
+
+
+
+/* NAVIGATIONAL STYLING */
+
+header {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+#img-logo {
+  width: 4rem;
+  float: left;
+}
+
+nav#nav-main {
+  display: none;
+  padding-top: 1.75rem;
+  float: right;
+}
+
+#nav-main a.active {
+  color: #DEE2E8;
+}
+
+.nav-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #A7A9AC;
+  padding: 0.5rem 1.25rem;
+}
+
+#menu {
+  position: absolute;
+  /* opacity: 0; */
+  display: block;
+  visibility: hidden;
+  text-align: center;
+  /* margin: auto; */
+  padding-top: 15rem;
+  margin-left: -19rem;
+
+  background-color: #A7D2C9;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  /* transition found at: https://css-tricks.com/using-css-transitions-auto-dimensions/ */
+  transition: height 0.2s ease-out;
+}
+
+#menu a {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+}
+
+#menu a:hover, #menu a:active, #menu a:focus {
+  color: #DEE2E8;
+}
+
+/* when hamburger icon clicked, make menu visible */
+#menu-toggle input:checked ~ div#menu {
+  width: 41rem;
+  height: 100rem;
+  margin-top: -7rem;
+  /* margin-left: -31rem; */
+
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+/* CSS only hamburger menu found at https://codepen.io/erikterwan/pen/EVzeRP
+because the js one we learned in class required refreshing the page & we were
+hoping to do one that does not require that */
+
+nav#nav-ham {
+  display: block;
+}
+
+nav#nav-ham span {
+  margin-left: 95%;
+  background: #DEE2E8;
+}
+
+nav#nav-ham input {
+  margin-left: 90%;
+}
+
+
+#menu-toggle {
+  display: block;
+  position: relative;
+
+  float: right;
+  margin-right: 2rem;
+  margin-top: 1.75rem;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu-toggle input {
+  display: block;
+  width: 2rem;
+  height:2rem;
+  position: absolute;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/* the three lines of the menu icon/symbol-- not sure if 'span' is semantic but this is how the tutorial does it and i think we need this in order to animate properly */
+
+#menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #DEE2E8;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: rotate(45deg);
+
+  transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.22s ease;
+}
+
+
+#menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* Transform all the lines of hamburger into an x */
+/* transform the top line */
+#menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(4px, 9px);
+  background: white;
+}
+
+/* hide the middle line */
+#menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* transform bottom line */
+#menu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(1px, 4px);
+}
+
+
+
+
+/* LANDING PAGE STYLING */
+
+.img-me-doodle {
+  width: 4.5rem;
+}
+
+#karate-iz {
+  margin-left: -0.5rem;
+}
+
+#waving-iz {
+  margin-right: -1rem;
+}
+
+#waving-iz-about {
+  width: 10rem;
+  /* margin-left: -2rem; */
+  /* margin-top: -5rem; */
+  /* position: absolute; */
+}
+
+#doodles {
+  display: block;
+}
+
+#home-blurb {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  display: block;
+}
+
+#landing {
+  padding-top: 10rem;
+}
+
+
+
+
+
+/* FOOTER STYLING */
+footer {
+  margin-top: 2rem;
+}
+
+.footer-line {
+  height: 2px;
+  background-color: #B6B7BB;
+  margin-bottom: 2rem;
+}
+
+.img-me-doodle {
+  width: 4.5rem;
+}
