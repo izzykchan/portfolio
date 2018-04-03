@@ -1,0 +1,82 @@
+/* LINK ELEMENTS */
+
+/* GENERAL LINK STYLING */
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+/* COLOUR REMAINS SAME IF VISITED OR NOT */
+a.in-text-link:visited {
+  color: #A7D2C9;
+}
+
+/* HOVER STATE IS DARKER COLOUR (DARK BLUE) */
+a:hover, a:active, a:focus {
+  color: #2A506C;
+  opacity: 0.75;
+}
+
+/* THE CURRENT PAGE IS INDICATED BY BEING A LIGHTER GREY COLOUR */
+#nav-main a.active {
+  color: #DEE2E8;
+}
+
+/* MENU LINK STYLING */
+#menu a {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  margin-left: 11rem;
+}
+
+#menu a:hover, #menu a:active, #menu a:focus {
+  color: #2A506C;
+  opacity: 0.75;
+}
+
+/* AS OVERLAY IS INITIALLY TRANSPARENT, WHEN HOVERED ON, MAKE IT VISIBLE */
+.overlay-mint:active, .overlay-mint:hover, .overlay-mint:focus {
+  background-color: #A7D2C9;
+  opacity: 0.85;
+}
+
+/* IN TEXT LINKS (ARE COLOURED) */
+.in-text-link {
+  color: #A7D2C9;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
+  color: #2A506C;
+  opacity: 0.75;
+}
+
+/* "DOWN ARROW" ON LANDING PAGE, ANCHORED TO #PROJECTS */
+/* css on how to create a "down arrow" found at https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #A7D2C9;
+
+  margin-top: 6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  -webkit-transition: border-top-color 0.2s ease-out;
+  transition: border-top-color 0.2s ease-out;
+}
+
+.arrow-down:hover, .arrow-down:focus, .arrow-down:active {
+  border-top-color: #2A506C;
+  opacity: 0.75;
+}

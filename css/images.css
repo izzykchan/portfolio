@@ -1,0 +1,82 @@
+/* STYLING FOR IMAGES & OVERLAYS */
+
+/* WEBSITE/PEROSNAL LOGO; FOUND IN HEADER AT ALL TIMES */
+#img-logo {
+  width: 4rem;
+  float: left;
+}
+
+/* THE PORTRAIT DOODLES */
+.img-me-doodle {
+  width: 4.5rem;
+}
+
+#karate-iz {
+  margin-left: -0.5rem;
+}
+
+#waving-iz {
+  margin-right: -1rem;
+}
+
+#waving-iz-about {
+  width: 8rem;
+  padding-top: 2rem;
+}
+
+/* IMG ON THE ABOUT PAGE */
+#img-about {
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* IMGS WITHIN PROCESS ANALYSES (ON PROJECT PAGES) */
+.img-proj {
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* PREVIEW/THUMBNAIL IMG OF PROJECTS ON HOMEPAGE (#PROJECTS) */
+.img-proj-preview {
+  width: 100%;
+  margin-top: -5rem;
+}
+
+/* STYLING SPECIFIC TO THE IMG-PROJ-PREVIEW (ON THE HOME PAGE) FOR PROJECT 1 */
+.proj-1 {
+  margin-top: -115%;
+  width: 115%;
+}
+
+/* STYLING SPECIFIC TO THE IMG-PROJ-PREVIEW (ON THE HOME PAGE) FOR PROJECT 2 */
+.proj-2 {
+  margin-top: -110%;
+  margin-left: -12%;
+  width: 125%;
+}
+
+/* MINT COLOURED OVERLAY FOR THE PROJECT PREVIEWS ON THE HOMEPAGE; INDICATES HOVER STATE */
+.overlay-mint {
+  background-color: #333;
+  opacity: 0.65;
+  height: 100%;
+  margin: 0;
+  vertical-align: center;
+
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+/* WHEN MINT OVERLAY APPEARS ON IMGS, ACCOMPANYING H3 APPEARS AS WELL */
+.overlay-mint h3 {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 5.75rem;
+  opacity: 1;
+}
+
+/* SPECIFIC IMG ON PROJECT 2 */
+.brochure-cover {
+  width: 105%;
+}

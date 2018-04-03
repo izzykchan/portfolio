@@ -1,35 +1,6 @@
-body {
-  margin: 3rem 2.5rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  color: #6B6C6D;
-  text-align: center;
-}
+/* THE NAVIGATIONAL ELEMENTS OF THE SITE */
 
-
-
-/* NAVIGATIONAL STYLING */
-
-header {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-}
-
-#img-logo {
-  width: 4rem;
-  float: left;
-}
-
-nav#nav-main {
-  display: none;
-  padding-top: 1.75rem;
-  float: right;
-}
-
-#nav-main a.active {
-  color: #DEE2E8;
-}
-
+/* NAV LINKS (BUTTONS), AS IN THE HEADER AND MENU */
 .nav-button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -40,17 +11,36 @@ nav#nav-main {
   padding: 0.5rem 1.25rem;
 }
 
+/* THE NAVIGATIONAL ITEMS WHEN IN HEADER; NOT HIDDEN IN HAMBURGER MENU */
+nav#nav-main {
+  display: none;
+  padding-top: 1.75rem;
+  float: right;
+}
+
+
+/* WHEN THE HAMBURGER ICON (SPANS) ARE CLICKED, MAKE THE MENU VISIBLE */
+#menu-toggle input:checked ~ div#menu {
+  width: 41rem;
+  height: 100rem;
+  margin-top: -7rem;
+  margin-left: -32rem;
+
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+/* NAVIGATIONAL MENU (TO BE OPENED BY HAMBURGER ICON) */
 #menu {
   position: absolute;
-  /* opacity: 0; */
-  display: block;
+  opacity: 0;
+  display: none;
   visibility: hidden;
   text-align: center;
-  /* margin: auto; */
   padding-top: 15rem;
-  margin-left: -19rem;
 
-  background-color: #A7D2C9;
+  background: #A7D2C9;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -58,49 +48,28 @@ nav#nav-main {
   transition: height 0.2s ease-out;
 }
 
-#menu a {
-  color: white;
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-top: 1.5rem;
-}
-
-#menu a:hover, #menu a:active, #menu a:focus {
-  color: #DEE2E8;
-}
-
-/* when hamburger icon clicked, make menu visible */
-#menu-toggle input:checked ~ div#menu {
-  width: 41rem;
-  height: 100rem;
-  margin-top: -7rem;
-  /* margin-left: -31rem; */
-
-  opacity: 1;
-  display: block;
-  visibility: visible;
-}
-
 /* CSS only hamburger menu found at https://codepen.io/erikterwan/pen/EVzeRP
 because the js one we learned in class required refreshing the page & we were
 hoping to do one that does not require that */
 
+/* BY DEFAULT, HAMBURGER MENU IS DISPLAYED */
 nav#nav-ham {
   display: block;
 }
 
+/* THE SPANS THAT MAKE UP THE LINES OF THE HAMBURGER ICON */
 nav#nav-ham span {
   margin-left: 95%;
+  /* float: right; */
   background: #DEE2E8;
 }
 
+/* PLACED INPUT CHECKBOX OVER HAMBURGER ICON TO DETERMINE IF CLICKED OR NOT */
 nav#nav-ham input {
   margin-left: 90%;
 }
 
-
+/* DIV CONTAINING ALL HAMBURGER MENU ITEMS: SPANS, CHECKBOX, ACTUAL MENU LINKS */
 #menu-toggle {
   display: block;
   position: relative;
@@ -176,61 +145,4 @@ nav#nav-ham input {
 /* transform bottom line */
 #menu-toggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(1px, 4px);
-}
-
-
-
-
-/* LANDING PAGE STYLING */
-
-.img-me-doodle {
-  width: 4.5rem;
-}
-
-#karate-iz {
-  margin-left: -0.5rem;
-}
-
-#waving-iz {
-  margin-right: -1rem;
-}
-
-#waving-iz-about {
-  width: 10rem;
-  /* margin-left: -2rem; */
-  /* margin-top: -5rem; */
-  /* position: absolute; */
-}
-
-#doodles {
-  display: block;
-}
-
-#home-blurb {
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-  display: block;
-}
-
-#landing {
-  padding-top: 10rem;
-}
-
-
-
-
-
-/* FOOTER STYLING */
-footer {
-  margin-top: 2rem;
-}
-
-.footer-line {
-  height: 2px;
-  background-color: #B6B7BB;
-  margin-bottom: 2rem;
-}
-
-.img-me-doodle {
-  width: 4.5rem;
 }

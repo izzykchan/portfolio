@@ -1,0 +1,93 @@
+/* STYLING SPECIFIC TO THE STYLEGUIDE */
+
+/* CONTAINER STYLING */
+#landing-styleguide {
+  padding-top: 10rem;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+#styleguide-content {
+  text-align: center;
+}
+
+/* STYLING SPECIFIC TO STYLEGUIDE SECTION HEADINGS */
+.sub-section .sub-header {
+  margin-top: 2.5rem;
+}
+
+.styleguide-section {
+  margin-top: 8rem;
+}
+
+.sub-section .proj-sub-header {
+  margin-top: 1.5rem;
+}
+
+.sub-section .sub-header {
+  margin-top: 1.5rem;
+}
+
+.sub-section .title {
+  margin-top: 1.5rem;
+}
+
+.sub-header-styleguide {
+  font-weight: 400;
+  color: #A7A9AC;
+  letter-spacing: 0.05rem;
+  text-transform: lowercase;
+  margin-top: 3rem;
+}
+
+.sub-section p {
+  display: inline-block;
+  margin: 0 0.75rem;
+  text-align: left;
+  max-width: 40rem;
+}
+
+/* COLOURED ELEMENTS */
+.colours {
+  display: inline-block;
+  width: 6rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0.25rem 0.25rem;
+  color: white;
+  box-shadow: 5px 5px 5px #DEE2E8;
+}
+
+.mint-bg {
+  background-color: #A7D2C9;
+}
+
+.grey-dark-bg {
+  background-color: #6B6C6D;
+}
+
+.grey-light-bg {
+  background-color: #DEE2E8;
+}
+
+.white-bg {
+  color: #6B6C6D;
+}
+
+.sample-code {
+  text-align: left;
+  margin-left: 30%;
+  max-width: 40rem;
+}
+
+.short-length {
+  margin-left: 35%;
+}
+
+/* RENDERED NAVIGATION */
+.rendered-nav-ham {
+  max-width: 30rem;
+  height: 30rem;
+  background-color: #CCC;
+  margin-left: 27%;
+}

@@ -1,0 +1,139 @@
+/* MEDIA QUERIES FOR PROGRESSIVE ENHANCEMENT */
+
+@media (min-width: 75.4376rem) {
+
+  body {
+    margin: 3rem 6rem;
+  }
+
+  #menu a {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 70.1rem) {
+
+  #home-blurb {
+    width: 55%;
+    margin-left: 22.5%;
+  }
+}
+
+@media (min-width: 65.1rem) {
+
+  .img-proj {
+    height: auto;
+  }
+
+  .proj-sub-header {
+    margin-top: 4rem;
+  }
+
+}
+
+@media (min-width: 56.626rem) {
+
+  .project {
+    width: 100%;
+  }
+}
+
+@media (min-width: 41.376rem) {
+
+  .proj-sub-header {
+    margin-top: 3rem;
+  }
+
+  #home-blurb {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 38.9376rem) {
+  /* HAMBURGER MENU NO LONGER VISIBLE, NAV-ITEMS ARE NOW AVAILABLE IN HEADER */
+  nav#nav-main {
+    display: block;
+  }
+
+  nav#nav-ham {
+    display: none;
+  }
+
+  #home-blurb {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 36.1rem) {
+
+  .section-header {
+    display: block;
+  }
+
+  #projects {
+    margin-top: 2rem;
+  }
+
+  .proj-1, .proj-2 {
+    margin-top: -100%;
+  }
+
+  #projects {
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 34.9376rem) {
+  #home-blurb {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 32.1rem) {
+  body {
+    margin: 3rem 4rem;
+  }
+
+  .list-proj-info li {
+    margin-left: 3rem;
+  }
+
+  .proj-copy {
+    margin-top: 1rem;
+  }
+
+  .project {
+    height: 20rem;
+  }
+
+  #projects .sub-header {
+    padding-top: 10rem;
+  }
+}
+
+@media (min-width: 30.6rem) {
+  #menu a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 26.0625rem) {
+  body {
+    margin: 3rem 3rem;
+  }
+
+  .img-me-doodle {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 22.1rem) {
+  #projects {
+    padding-top: 4rem;
+  }
+
+}

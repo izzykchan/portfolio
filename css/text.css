@@ -1,0 +1,134 @@
+/* TEXT, HEADINGS, LISTS, ETC. */
+
+/* H1 & H2 GENERALLY */
+.section-header {
+  font-weight: 300;
+  color: #A7D2C9;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/* GENERALLY H2, ON PROJECTS PAGES ONLY */
+.proj-sub-header {
+  font-weight: 300;
+  color: #A7A9AC;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 8rem;
+  margin-bottom: auto;
+}
+
+/* GENERALL H3 */
+.sub-header {
+  font-weight: 500;
+  color: #4D616C;
+  opacity: 0.65;
+  margin-top: -0.75rem;
+  letter-spacing: 0.05rem;
+  text-transform: lowercase;
+}
+
+/* H1 ON LANDING PAGE */
+.home-blurb-header {
+  font-weight: 300;
+  color: #A7A9AC;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 0rem;
+  margin-bottom: auto;
+}
+
+/* ALL BODY COPY */
+.body-copy {
+  font-weight: 300;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  max-width: 40rem;
+}
+
+/* SPECIFIC TO THE COPY OF THE PROJECTS PAGES */
+.proj-copy {
+  display: inline-block;
+  text-align: left;
+  max-width: 45rem;
+  margin-left: 0rem;
+  margin-top: 2rem;
+  line-height: 1.75rem;
+}
+
+/* SPECIFIC TO THE ABOUT PAGE COPY */
+.bio-copy {
+  display: inline-block;
+  text-align: left;
+  max-width: 40rem;
+  line-height: 1.5rem;
+}
+
+/* SEPARATE THE "CONTACT ME" PARAGRAPH FROM THE BIO PARAGRAPH ON THE ABOUT PAGE */
+.contact-copy {
+  margin-top: 2rem;
+}
+
+/* THE COPY IN THE FOOTER IS SMALLER THAN BODY COPY*/
+.footer-copy {
+  font-size: 0.75rem;
+}
+
+/* H4; SMALLER, DARKER HEADING (COMPARED TO THE H1, 2, AND 3S) */
+.title {
+  font-weight: 400;
+  color: #444;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+/* MAKE COPY OF CONTENT SECTION OF ABOUT PAGE INLINE (BECAUSE DIFFERENT <P>'S ARE USED TO CLASS SOME OF THE TEXT AS LINKS') */
+.contact-copy p {
+  display: inline;
+}
+
+/* THE "HEY THERE" GREETING OF THE ABOUT PAGE BIO */
+.bio .section-header {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* STYLING FOR <P>'S THAT ARE OF LESSER HEIRARCHY; DIFFERENTIATING BY ITALICISING AND LIGHTER SHADE OF GREY' */
+.sub-script {
+  font-weight: 400i;
+  color: #A7A9AC;
+  margin-top: -1.5rem;
+}
+
+/* EMPHASIZED SUB-SCRIPT INFORMATION; IS THE RED-ISH COLOUR */
+.sub-script-emphasis {
+  color: #E7633E;
+  opacity: 0.65;
+  margin-top: -1.5rem;
+}
+
+/* DIV FOR LISTING PROJECT INFOR SUCH AS ROLE, TEAM MEMBERS, TIME FRAME, ETC. */
+.list-proj-info {
+  max-width: 40rem;
+  margin: 3rem 0;
+}
+
+.list-proj-info li {
+  margin-left: 1.5rem;
+}
+
+.list {
+  text-align: left;
+  margin-left: 43%;
+}
+
+/* STYLING FOR IMAGE CAPTIONS */
+figcaption {
+  margin-top: 0.5rem;
+}
