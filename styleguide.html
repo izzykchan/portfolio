@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/links.css">
@@ -18,42 +18,29 @@
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/styleguide-specific.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+
   </head>
 
   <body>
 
     <header>
-      <a href="index.html"><img id="img-logo" src="img/logo.svg" alt="the initials i-k-c"></img></a>
+      <a href="index.html"><img id="img-logo" src="img/logo.svg" alt="the initials i-k-c in a hand-drawn typeface"></a>
 
-      <nav id="nav-main">
+      <nav id="nav-styleguide">
         <a href="#visuals" class="nav-button">visuals</a>
         <a href="#interactions" class="nav-button">interactions</a>
         <a href="#structure" class="nav-button">structure</a>
-      </nav>
-
-      <nav id="nav-ham">
-        <div id="menu-toggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <div id="menu" aria-hidden="true">
-              <a href="#visuals" class="button-nav">visuals</a>
-              <a href="#interactions" class="button-nav">interactions</a>
-              <a href="#structure" class="button-nav">structure</a>
-            </div>
-          </div>
-        </div>
       </nav>
     </header>
 
     <section id="landing-styleguide">
 
       <div id="doodles">
-        <!-- <img class="img-me-doodle" id="waving-iz" src="img/waving-iz.svg" alt="a doodle of a girl waving"></img> -->
-        <img class="img-me-doodle" id="camera-iz" src="img/camera-iz.svg" alt="a doodle of a girl behind a camera"></img>
-        <!-- <img class="img-me-doodle" id="karate-iz" src="img/karate-iz.svg" alt="a doodle of a girl doing a karate kick"></img> -->
+
+        <img class="img-me-doodle" id="camera-iz" src="img/camera-iz.svg" alt="a doodle of a girl behind a camera">
+
       </div>
 
       <div id="home-blurb">
@@ -79,6 +66,8 @@
             <p>.grey-light</p>
             <p>.grey-dark</p>
             <p>.white</p>
+            <p>.dark-blue-bg</p>
+            <p>.red-bg</p>
 
           <h3 class="sub-header-styleguide">sample code:</h3>
           <div class="sample-code">
@@ -87,6 +76,8 @@
             <br>&lt;div class="colours grey-light"&gt;#992630&lt;/div&gt;
             <br>&lt;div class="colours grey-dark"&gt;#555&lt;/div&gt;
             <br>&lt;div class="colours white"&gt;#222&lt;/div&gt;
+            <br>&lt;div class="colours dark-blue-bg"&gt;#2A506C&lt;/div&gt;
+            <br>&lt;div class="colours red-bg"&gt;#E7633E&lt;/div&gt;
             <br>&lt;/section&gt;</code>
           </div>
 
@@ -96,6 +87,8 @@
               <div class="colours grey-light-bg">#DEE2E8</div>
               <div class="colours grey-dark-bg">#6B6C6D</div>
               <div class="colours white-bg">#FFF</div>
+              <div class="colours dark-blue-bg">#2A506C</div>
+              <div class="colours red-bg">#E7633E</div>
             </section>
           </div>
       </section>
@@ -116,11 +109,11 @@
 
               <h3 class="sub-header-styleguide">sample code:</h3>
               <div class="sample-code">
-              <code>&lt;h1 class="section-header"&gt;section header&lt;/h1&gt;
-              <br>&lt;h3 class="sub-header"&gt;sub header&lt;/h3&gt;
-              <br>&lt;h2 class="proj-sub-header"&gt;project sub header&lt;/h2&gt;
-              <br>&lt;h1 class="home-blurb-header"&gt;home blurb header&lt;/h1&gt;
-              <br>&lt;h4 class="title"&gt;title&lt;/h4&gt;</code>
+                <code>&lt;h1 class="section-header"&gt;section header&lt;/h1&gt;
+                <br>&lt;h3 class="sub-header"&gt;sub header&lt;/h3&gt;
+                <br>&lt;h2 class="proj-sub-header"&gt;project sub header&lt;/h2&gt;
+                <br>&lt;h1 class="home-blurb-header"&gt;home blurb header&lt;/h1&gt;
+                <br>&lt;h4 class="title"&gt;title&lt;/h4&gt;</code>
               </div>
 
               <h3 class="sub-header-styleguide">rendered element:</h3>
@@ -140,8 +133,8 @@
               <p>.body-copy</p>
 
               <h3 class="sub-header-styleguide">sample code:</h3>
-              <div class="sample-code short-length">
-              <code>&lt;p class="body-copy"&gt;paragraph&lt;/p&gt;</code>
+              <div class="sample-code">
+                <code>&lt;p class="body-copy"&gt;paragraph&lt;/p&gt;</code>
               </div>
 
               <h3 class="sub-header-styleguide">rendered element:</h3>
@@ -157,7 +150,7 @@
               <p>.list-bulleted</p>
 
               <h3 class="sub-header-styleguide">sample code:</h3>
-              <div class="sample-code short-length">
+              <div class="sample-code">
               <code>&lt;ul class="list-bulleted"&gt;
                 <br>&lt;li&gt;item one&lt;/li&gt;
                 <br>&lt;li&gt;item two&lt;/li&gt;
@@ -182,7 +175,7 @@
               <p>.list-numbered</p>
 
               <h3 class="sub-header-styleguide">sample code:</h3>
-              <div class="sample-code short-length">
+              <div class="sample-code">
               <code>&lt;ol class="list-numbered"&gt;
                 <br>&lt;li&gt;item one&lt;/li&gt;
                 <br>&lt;li&gt;item two&lt;/li&gt;
@@ -199,11 +192,11 @@
             </div>
           </section>
       </section>
-      </section>
+    </section>
 
-      <!-- INTERACTIONS -->
-      <!-- Default Button styling section -->
-      <section id="#interactions">
+    <!-- INTERACTIONS -->
+    <!-- Default Button styling section -->
+    <section id="interactions">
 
         <h2 class="section-header styleguide-section">Navigation Button</h2>
 
@@ -212,8 +205,8 @@
           <p>.nav-button</p>
 
           <h3 class="sub-header-styleguide">sample code:</h3>
-          <div class="sample-code short-length">
-          <code>&lt;a href="#" class="nav-button"&gt;nav button&lt;/a&gt;</code>
+          <div class="sample-code">
+            <code>&lt;a href="#" class="nav-button"&gt;nav button&lt;/a&gt;</code>
           </div>
 
           <h3 class="sub-header-styleguide">rendered element:</h3>
@@ -227,87 +220,80 @@
           <p>.in-text-link</p>
 
           <h3 class="sub-header-styleguide">sample code:</h3>
-          <div class="sample-code short-length">
-          <code>&lt;a href="#" class="in-text-link"&gt;thelink&lt;/a&gt;</code>
+          <div class="sample-code">
+            <code>&lt;a href="#" class="in-text-link"&gt;thelink&lt;/a&gt;</code>
           </div>
 
           <h3 class="sub-header-styleguide">rendered element:</h3>
           <p>this right here is <a class="in-text-link" href="#">the link</a>.</p>
         </div>
 
-    <!-- MAIN NAV -->
-    <section id="combined_elements">
+      <!-- MAIN NAV -->
+      <section id="combined_elements">
 
-      <section>
-        <h2 class="section-header styleguide-section">Main Navigation</h2>
+        <section>
+          <h2 class="section-header styleguide-section">Navigation Menus</h2>
 
-        <div class="sub-section">
-          <h3 class="sub-header-styleguide">css selector:</h3>
-            <p>#nav-main</p>
+          <div class="sub-section">
+            <h3 class="sub-header-styleguide">css selector:</h3>
+              <p>#nav-main</p>
 
-            <h3 class="sub-header-styleguide">sample code:</h3>
-            <div class="sample-code short-length">
-            <code>&lt;a href="#"&gt;work&lt;/a&gt;
-            <br>&lt;a href="#"&gt;about&lt;/a&gt;
-            </code>
-            </div>
-
-            <h3 class="sub-header-styleguide">rendered element:</h3>
-            <a href="#" class="nav-button">work</a>
-            <a href="#" class="nav-button">about</a>
-
-            <div class="rendered-nav-ham">
-              <div id="menu-toggle-rendered">
-                  <input type="checkbox" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-
-                  <div id="menu-rendered" aria-hidden="true">
-                    <a href="#" class="button-nav">work</a>
-                    <a href="#" class="button-nav">about</a>
-                  </div>
-                </div>
+              <h3 class="sub-header-styleguide">sample code:</h3>
+              <div class="sample-code">
+                <code>&lt;nav id="nav-main"&gt;
+                <br>&lt;a href="#"&gt;work&lt;/a&gt;
+                <br>&lt;a href="#"&gt;about&lt;/a&gt;
+                <br>&lt;nav id="nav-main"&gt;
+                </code>
               </div>
-            </div>
-          </div>
 
-        <h2 class="section-header styleguide-section">Project Listing</h2>
+              <h3 class="sub-header-styleguide">rendered element:</h3>
+              <header id="header-rendered">
+                <a href="index.html"><img id="img-logo-rendered" src="img/logo.svg" alt="the initials i-k-c in a hand-drawn typeface"></a>
 
-        <div class="sub-section">
-          <h3 class="sub-header-styleguide">css selector:</h3>
-            <p>.project</p>
+                <nav id="nav-main-rendered">
+                  <a href="#" class="nav-button">work</a>
+                  <a href="#" class="nav-button">about</a>
+                </nav>
 
-            <h3 class="sub-header-styleguide">sample code:</h3>
-            <div class="sample-code">
-            <code>&lt;a href="#"&gt;
-            <br>&lt;div class="project feature-img"&gt;
-            <br>&lt;img class="img-proj-feature proj-#" src="img/name.jpg" alt="alternate text description"&gt;&lt;/a&gt;
-            <br>&lt;/div&gt;</code>
+              </header>
             </div>
 
-            <h3 class="sub-header-styleguide">rendered element:</h3>
+        <div id="project-listing">
+          <h2 class="section-header styleguide-section">Project Listing</h2>
 
-            <section class="projects">
+          <div class="sub-section">
+            <h3 class="sub-header-styleguide">css selector:</h3>
+              <p>.project</p>
 
-              <section id="projects">
-                <a href="#">
-                  <div class="project feature-img">
-                    <img class="img-proj-feature proj-1" src="img/yrbk-flatlay.png" alt="the front and back covers of Burnaby North Secondary's 2015 Yearbook, called Create.">
+              <h3 class="sub-header-styleguide">sample code:</h3>
+              <div class="sample-code">
+                <code>&lt;a href="#"&gt;
+                <br>&lt;div class="project feature-img"&gt;
+                <br>&lt;img class="img-proj-feature proj-#" src="img/name.jpg" alt="alternate text description"&gt;&lt;/a&gt;
+                <br>&lt;/div&gt;</code>
+              </div>
+
+              <h3 class="sub-header-styleguide">rendered element:</h3>
+
+                <div class="project-rendered">
+                  <div class="overlay-mint">
+                    <h3 class="sub-header">yrbk</h3>
                   </div>
-                </a>
-                <a href="#">
-                  <div class="project feature-img">
-                    <img class="img-proj-feature proj-2" src="img/cozmos-critters.png" alt="the front and back covers of Burnaby North Secondary's 2015 Yearbook, called Create.">
+                  <img class="img-proj-preview proj-1" src="img/yrbk-flatlay.png" alt="the front and back covers of Burnaby North Secondary's 2015 Yearbook, called Create.">
+                </div>
+                <div class="project-rendered">
+                  <div class="overlay-mint">
+                    <h3 class="sub-header">bka</h3>
                   </div>
-                </a>
-              </section>
+                  <img class="img-proj-preview proj-2" src="img/brochure-cover-crop.png" alt="the front and back covers of Burnaby North Secondary's 2015 Yearbook, called Create.">
+                </div>
 
-            </section>
+            </div>
           </div>
         </section>
-
-    </section>
+      </section>
+      </section>
     </section>
 
     <footer>

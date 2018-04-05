@@ -1,14 +1,33 @@
 /* STYLING SPECIFIC TO THE STYLEGUIDE */
 
+#nav-styleguide {
+  float: right;
+  display: block;
+  text-align: center;
+}
+
+#nav-styleguide .nav-button {
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  padding: 1.75rem 0.5rem;
+  padding-bottom: 0;
+}
+
 /* CONTAINER STYLING */
+
 #landing-styleguide {
   padding-top: 10rem;
   text-align: center;
   padding-bottom: 10rem;
 }
 
-#styleguide-content {
-  text-align: center;
+#visuals, #interactions, #structure {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  box-shadow: 2px 2px 25px #DEE2E8;
+  background-color: white;
 }
 
 /* STYLING SPECIFIC TO STYLEGUIDE SECTION HEADINGS */
@@ -41,21 +60,33 @@
 }
 
 .sub-section p {
-  display: inline-block;
-  margin: 0 0.75rem;
+  display: block;
+  margin: 0.5rem 0.75rem;
   text-align: left;
   max-width: 40rem;
+}
+
+.sample-code {
+  text-align: left;
+  max-width: 40rem;
+  /* margin-left: 5%; */
+}
+
+
+.list {
+  text-align: left;
+  /* margin-left: 43%; */
 }
 
 /* COLOURED ELEMENTS */
 .colours {
   display: inline-block;
-  width: 6rem;
+  width: 85%;
   text-align: center;
   padding: 2rem 1rem;
   margin: 0.25rem 0.25rem;
   color: white;
-  box-shadow: 5px 5px 5px #DEE2E8;
+  box-shadow: 5px 5px 20px #DEE2E8;
 }
 
 .mint-bg {
@@ -74,20 +105,140 @@
   color: #6B6C6D;
 }
 
-.sample-code {
-  text-align: left;
-  margin-left: 30%;
-  max-width: 40rem;
+.red-bg {
+  background-color: #E7633E;
+  opacity: 0.65;
 }
 
-.short-length {
-  margin-left: 35%;
+.dark-blue-bg {
+  background-color: #2A506C;
+  opacity: 0.75;
 }
+
 
 /* RENDERED NAVIGATION */
-.rendered-nav-ham {
-  max-width: 30rem;
-  height: 30rem;
-  background-color: #CCC;
-  margin-left: 27%;
+
+#header-rendered {
+  width: 90%;
+  height: 25rem;
+  border: 1px solid #DDD;
+  padding: 1rem 1rem;
+}
+
+/* THE NAVIGATIONAL ITEMS WHEN IN HEADER; NOT HIDDEN IN HAMBURGER MENU */
+nav#nav-main-rendered {
+  display: block;
+  padding-top: 1rem;
+  float: right;
+}
+
+#nav-main-rendered .nav-button {
+  font-size: 0.75rem;
+}
+
+#project-listing {
+  margin-top: 8rem;
+}
+
+#project-listing #projects {
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.project-rendered {
+  text-align: center;
+  display: block;
+  max-width: 40rem;
+  height: 12rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+/* PREVIEW/THUMBNAIL IMG OF PROJECTS ON HOMEPAGE (#PROJECTS) */
+.img-proj-preview {
+  width: 100%;
+  margin-top: -12rem;
+}
+
+/* MINT COLOURED OVERLAY FOR THE PROJECT PREVIEWS ON THE HOMEPAGE; INDICATES HOVER STATE.
+
+STARTS DARK GREY, WHEN HOVERED BECOMES MINT COLOURED*/
+.overlay-mint {
+  background-color: #333;
+  opacity: 0.65;
+  height: 12rem;
+  margin: auto;
+  vertical-align: center;
+
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+/* WHEN MINT OVERLAY APPEARS ON IMGS, ACCOMPANYING H3 APPEARS AS WELL */
+.overlay-mint h3 {
+  padding-top: 5rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 32.1rem) {
+
+  .project-rendered {
+    height: 20rem;
+  }
+
+  .overlay-mint  {
+    height: 20rem;
+  }
+
+  .img-proj-preview   {
+    margin-top: -20rem;
+  }
+
+  .overlay-mint h3 {
+    padding-top: 9rem;
+  }
+
+}
+
+@media (min-width: 34.375rem) {
+
+  .colours {
+    width: 8rem;
+  }
+
+  #visuals, #interactions, #structure {
+    padding: 1rem 3rem;
+  }
+
+  #nav-styleguide .nav-button {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (min-width: 45.375rem) {
+
+  #visuals, #interactions, #structure {
+    padding: 2rem 4rem;
+  }
+
+  #nav-styleguide .nav-button {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 60.375rem) {
+  #visuals, #interactions, #structure {
+    padding: 2rem 6rem;
+  }
+
+}
+
+@media (min-width: 70.375rem) {
+
+
 }

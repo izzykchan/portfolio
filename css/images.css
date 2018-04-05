@@ -2,8 +2,7 @@
 
 /* WEBSITE/PEROSNAL LOGO; FOUND IN HEADER AT ALL TIMES */
 #img-logo {
-  width: 4rem;
-  float: left;
+  width: 3.5rem;
 }
 
 /* THE PORTRAIT DOODLES */
@@ -36,6 +35,11 @@
   max-width: 40rem;
 }
 
+.crop-proj-photo {
+  overflow: hidden;
+  max-height: 30rem;
+}
+
 /* PREVIEW/THUMBNAIL IMG OF PROJECTS ON HOMEPAGE (#PROJECTS) */
 .img-proj-preview {
   width: 100%;
@@ -55,7 +59,9 @@
   width: 125%;
 }
 
-/* MINT COLOURED OVERLAY FOR THE PROJECT PREVIEWS ON THE HOMEPAGE; INDICATES HOVER STATE */
+/* MINT COLOURED OVERLAY FOR THE PROJECT PREVIEWS ON THE HOMEPAGE; INDICATES HOVER STATE.
+
+STARTS DARK GREY, WHEN HOVERED BECOMES MINT COLOURED*/
 .overlay-mint {
   background-color: #333;
   opacity: 0.65;
@@ -76,7 +82,11 @@
   opacity: 1;
 }
 
-/* SPECIFIC IMG ON PROJECT 2 */
+/* SPECIFIC IMGS ON PROJECT 2 */
 .brochure-cover {
   width: 105%;
+}
+
+.img-brochure-process {
+  margin-top: -5rem;
 }
