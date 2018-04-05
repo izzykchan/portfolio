@@ -124,6 +124,17 @@
   margin-left: 1.5rem;
 }
 
+/* HIDDEN DEFINITION OF KARATEKA, IS DISPLAYED WHEN THE HOME BLURB IS HOVERED ON/TOGGLED */
+.hidden-text {
+  font-size: 0.9rem;
+  color: #E7633E;
+
+  opacity: 0;
+
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
 /* STYLING FOR IMAGE CAPTIONS */
 figcaption {
   margin-top: 0.5rem;

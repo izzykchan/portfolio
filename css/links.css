@@ -69,7 +69,7 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 
   border-top: 20px solid #A7D2C9;
 
-  margin-top: 6rem;
+  margin-top: 4rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -81,4 +81,13 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 .arrow-down:hover, .arrow-down:focus, .arrow-down:active {
   border-top-color: #2A506C;
   opacity: 0.75;
+}
+
+/* WHEN HOME BLURB IS HOVERED/TOGGLED, DEFINITION OF KARATEKA APPEARS BENEATH */
+#hidden-defn:hover ~ p.hidden-text {
+  opacity: 0.65;
+}
+
+#hidden-defn:active, #hidden-defn:focus ~ p.hidden-text {
+  opacity: 0.65;
 }
