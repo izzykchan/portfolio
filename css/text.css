@@ -31,6 +31,11 @@
   text-transform: lowercase;
 }
 
+.overlay-mint .sub-header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* H1 ON LANDING PAGE */
 .home-blurb-header {
   font-weight: 300;

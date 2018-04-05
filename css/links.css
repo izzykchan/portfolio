@@ -85,9 +85,9 @@ a.in-text-link:hover, a.in-text-link:active, a.in-text-link:focus {
 
 /* WHEN HOME BLURB IS HOVERED/TOGGLED, DEFINITION OF KARATEKA APPEARS BENEATH */
 #hidden-defn:hover ~ p.hidden-text {
-  opacity: 0.65;
+  opacity: 0.5;
 }
 
 #hidden-defn:active, #hidden-defn:focus ~ p.hidden-text {
-  opacity: 0.65;
+  opacity: 0.5;
 }
