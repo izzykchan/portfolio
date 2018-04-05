@@ -18,3 +18,8 @@ nav#nav-main {
   padding-top: 1.75rem;
   float: right;
 }
+
+#nav-bottom {
+  text-align: left;
+  margin-top: 2rem;
+}

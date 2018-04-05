@@ -116,6 +116,15 @@
   body {
     margin: 2rem 4rem;
   }
+
+  #nav-bottom {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  #nav-bottom a {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 65.1rem) {

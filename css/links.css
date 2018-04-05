@@ -18,32 +18,34 @@ a:hover, a:active, a:focus {
   opacity: 0.75;
 }
 
-/* THE CURRENT PAGE IS INDICATED BY BEING A LIGHTER GREY COLOUR */
-#nav-main a.active {
-  color: #DEE2E8;
-}
-
-/* MENU LINK STYLING */
-#menu a {
-  color: white;
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-top: 1.5rem;
-  margin-left: 11rem;
-}
-
-#menu a:hover, #menu a:active, #menu a:focus {
+#nav-bottom a:hover, #nav-bottom a:active, #nav-bottom a:focus {
   color: #2A506C;
-  opacity: 0.75;
+  opacity: 0.5;
 }
+
+/* THE CURRENT PAGE IS INDICATED BY BEING A MINT COLOUR */
+nav a.active {
+  color: #A7D2C9;
+}
+
+#nav-bottom a.active {
+  color: #A7D2C9;
+}
+
+/* THE BOTTOM NAV LINKS ARE A LIGHTER GREY THAN THE MAIN NAV LINKS */
+#nav-bottom a {
+  color: #DEE2E8;
+  display: block;
+  margin-top: 0.75rem;
+}
+
 
 /* AS OVERLAY IS INITIALLY TRANSPARENT, WHEN HOVERED ON, MAKE IT VISIBLE */
 .overlay-mint:active, .overlay-mint:hover, .overlay-mint:focus {
   background-color: #A7D2C9;
   opacity: 0.85;
 }
+
 
 /* IN TEXT LINKS (ARE COLOURED) */
 .in-text-link {

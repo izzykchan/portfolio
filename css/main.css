@@ -13,11 +13,11 @@ header {
 }
 
 footer {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .footer-line {
-  height: 2px;
+  height: 1px;
   background-color: #B6B7BB;
   margin-bottom: 2rem;
 }
