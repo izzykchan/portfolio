@@ -1,3 +1,5 @@
+/* STYLING FOR THE DIVS/CONTAINERS/SECTIONS */
+
 body {
   padding: 2rem 1.5rem;
   font-family: 'Montserrat', sans-serif;
@@ -16,32 +18,37 @@ footer {
   margin-top: 1rem;
 }
 
+/* CREATE A LINE TO SEPARATE THE FOOTER FROM THE PAGE CONTENT */
 .footer-line {
   height: 1px;
   background-color: #B6B7BB;
   margin-bottom: 2rem;
 }
 
-
+/* THE LANDING OF THE HOME/LANDING PAGE */
 #landing {
   padding-top: 7rem;
   text-align: center;
 }
 
+/* THE BLURB ON THE HOME/LANDING PAGE */
 #home-blurb {
   display: block;
   line-height: 1.75rem;
   margin-top: 0rem;
 }
 
+/* THE ME-DOODLES */
 #doodles {
   display: block;
 }
 
+/* GIVE ALL PAGE CONETNT THE SAME TOP PADDING */
 #page-content {
   padding-top: 3rem;
 }
 
+/* THE PROJECTS SECTION OT YHR INDEX PAGE */
 #projects {
   display: block;
   text-align: center;

@@ -107,7 +107,7 @@
 
 /* STYLING FOR <P>'S THAT ARE OF LESSER HEIRARCHY; DIFFERENTIATING BY ITALICISING AND LIGHTER SHADE OF GREY' */
 .sub-script {
-  font-weight: 400i;
+  font-weight: 400;
   color: #A7A9AC;
   margin-top: -1.5rem;
 }
@@ -136,7 +136,7 @@
 
   opacity: 0;
 
-  -webkit-transition: opacity 0.2s ease-out;
+  /* -webkit-transition: opacity 0.2s ease-out; */
   transition: opacity 0.2s ease-out;
 }
 
